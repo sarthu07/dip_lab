@@ -23,9 +23,18 @@ def rgb_to_gray(img):
 image = mpimg.imread("yoyoy.jpg")   
 grayImage = rgb_to_gray(image)  
 
-img = np.array(image)
+img = np.array(grayImage)
 binarr = np.where(img>128, 255, 0)
-plt.imshow(binarr)
-plt.show
-plt.imshow(grayImage)
+
+img3 = np. add(grayImage, binarr)
+
+img4 = np.add(20,grayImage)
+
+
+#subplot(r,c) provide the no. of rows and columns
+f, axarr = plt.subplots(1,4) 
+axarr[0].imshow(grayImage)
+axarr[1].imshow(binarr, cmap='gray')
+axarr[2].imshow(img3, cmap='gray')
+axarr[3].imshow(img4 , cmap='gray')
 plt.show()
