@@ -20,3 +20,5 @@ Assignment - 9 Huffman Coding
 Assignment - 10 Arithmetic Coding
 
 Assignment - 11 Converting a colour image into a gray scale image and performing edge detection.
+
+project report - pixel binning 
